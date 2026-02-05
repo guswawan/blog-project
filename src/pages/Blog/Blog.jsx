@@ -5,8 +5,6 @@ import { useParams } from 'react-router-dom';
 import { getBlogList, getBlogDetail } from '../../services/blog.service';
 import Loading from '../../components/Loading';
 
-// import "./blog.style.css";
-
 const Blog = () => {
   const { id } = useParams();
   const [postInfo, setPostInfo] = useState();

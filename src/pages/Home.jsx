@@ -11,14 +11,12 @@ const Home = () => {
     const fetchData = async () => {
       const resp = await getBlogList();
 
-      console.log(resp);
       setBlogList(resp);
     };
 
     fetchData();
   }, []);
 
-  console.log('object', blogList);
   if (blogList.length === 0) return <Loading text="Getting Blog List..." />;
 
   return (
